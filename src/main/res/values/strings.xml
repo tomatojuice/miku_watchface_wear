@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Vocalo Character Watch Faces</string>
+    <string name="message">Watch face tapped</string>
+    <string name="my_analog_name">Vocalo Character Watch Faces</string>
+    <string name="title_activity_config">Config</string>
+    <string name="smooth">Smooth</string>
+    <string name="ambient">Ambient</string>
+</resources>
