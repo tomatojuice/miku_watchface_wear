@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
     defaultConfig {
 //        applicationId "tomatojuice.sakura.ne.jp.mywatchfaces"
         applicationId "tomatojuice.sakura.ne.jp.mywatchfacesforwear"
-        minSdkVersion 20
-        targetSdkVersion 25
+        minSdkVersion 22
+        targetSdkVersion 27
         versionCode 8
         versionName "1.7"
     }
@@ -20,10 +20,12 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.google.android.support:wearable:2.0.1'
-    compile 'com.google.android.wearable:wearable:2.0.1'
-    compile 'com.google.android.gms:play-services-wearable:10.0.1'
-    compile 'com.android.support:palette-v7:25.3.1'
-    compile 'com.android.support:support-v4:25.3.1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.android.support:wearable:2.3.0'
+    implementation 'com.google.android.gms:play-services-wearable:15.0.1'
+    implementation 'com.android.support:percent:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:palette-v7:27.1.1'
+    compileOnly 'com.google.android.wearable:wearable:2.3.0'
 }
